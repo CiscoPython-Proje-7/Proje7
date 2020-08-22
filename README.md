@@ -53,17 +53,16 @@ Yazılım projesinin çalıştırılması ve test edilmesi süresince karşıla�
 Test Sürecinde Kullanılan Modüller (Varsa) 
 Proje test sürecinde gerektiğinde farklı modüller kullanılarak test çalışması gerçekleştirilmektedir. Proje sürecinde eğer bu modüllerden herhangi birini kullandıysanız. Modülü kullanırken yaptığınız kodlama bu bölümde yer almaktadır. 
  
-Değerlendirme Kriterleri
 
-KRİTERLER	Ekip Üyeleri 	Eğitmen 1	Eğitmen 2	Eğitmen 3	Ortalama
-1.	Analiz Raporunun Tamamlanması	Yusuf Önder Akyol, Serkan Güner				
-2.	Tasarım Raporunun Tamamlanması	Yusuf Önder Akyol, Serkan Güner				
-3.	Gerçekleştirim Raporunun Tamamlanması	Yusuf Önder Akyol, Serkan Güner				
-4.	Gantt Diagramı 	Serdar Asarkaya				
-5.	Arayüz tasarımı	Kemal Özlü, Mahmut Atik, Serdar Asarkaya				
-6.	Veri Tasarımı-Sınıf Tasarımı 	Kemal Özlü, Mahmut Atik, Serdar Asarkaya				
-7.	Kullanıcı Yardım Dökümanı	Gökhan Dağlı				
-8.	Programın Çalıştırılması 	Kemal Özlü, Mahmut Atik, Serdar Asarkaya, Serkan Güner, Yusuf Önder Akyol				
-9.	Yazılım Test Çalışması 	Olgun Uğurlu				
+Görev dağılımı
+1.	Analiz Raporunun Tamamlanması: Yusuf Önder Akyol, Serkan Güner				
+2.	Tasarım Raporunun Tamamlanması: Yusuf Önder Akyol, Serkan Güner				
+3.	Gerçekleştirim Raporunun Tamamlanması: Yusuf Önder Akyol, Serkan Güner				
+4.	Gantt Diagramı: Serdar Asarkaya				
+5.	Arayüz tasarımı:	Kemal Özlü, Mahmut Atik, Serdar Asarkaya				
+6.	Veri Tasarımı-Sınıf Tasarımı: Kemal Özlü, Mahmut Atik, Serdar Asarkaya				
+7.	Kullanıcı Yardım Dökümanı: Gökhan Dağlı				
+8.	Programın Çalıştırılması:	Kemal Özlü, Mahmut Atik, Serdar Asarkaya, Serkan Güner, Yusuf Önder Akyol				
+9.	Yazılım Test Çalışması:	Olgun Uğurlu				
 
 
