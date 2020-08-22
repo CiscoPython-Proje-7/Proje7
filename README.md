@@ -45,22 +45,22 @@ Proje test sürecinde gerektiğinde farklı modüller kullanılarak test çalı�
 
 ## Görev dağılımı
 ### 1.	Analiz Raporunun Tamamlanması
-:arrow_right: Yusuf Önder Akyol, Serkan Güner				
+Yusuf Önder Akyol, Serkan Güner				
 ### 2.	Tasarım Raporunun Tamamlanması
-:arrow_right: Yusuf Önder Akyol, Serkan Güner				
+Yusuf Önder Akyol, Serkan Güner				
 ### 3.	Gerçekleştirim Raporunun Tamamlanması
-:arrow_right: Yusuf Önder Akyol, Serkan Güner				
+Yusuf Önder Akyol, Serkan Güner				
 ### 4.	Gantt Diagramı
-:arrow_right: Serdar Asarkaya				
+Serdar Asarkaya				
 ### 5.	Arayüz tasarımı
-:arrow_right: Kemal Özlü, Mahmut Atik, Serdar Asarkaya				
+Kemal Özlü, Mahmut Atik, Serdar Asarkaya				
 ### 6.	Veri Tasarımı-Sınıf Tasarımı
-:arrow_right: Kemal Özlü, Mahmut Atik, Serdar Asarkaya				
+Kemal Özlü, Mahmut Atik, Serdar Asarkaya				
 ### 7.	Kullanıcı Yardım Dökümanı
-:arrow_right: Gökhan Dağlı				
+Gökhan Dağlı				
 ### 8. Programın Çalıştırılması
-:arrow_right: Kemal Özlü, Mahmut Atik, Serdar Asarkaya, Serkan Güner, Yusuf Önder Akyol				
+Kemal Özlü, Mahmut Atik, Serdar Asarkaya, Serkan Güner, Yusuf Önder Akyol				
 ### 9. Yazılım Test Çalışması
-:arrow_right: Olgun Uğurlu				
+Olgun Uğurlu				
 
 
