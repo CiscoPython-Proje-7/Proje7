@@ -1,9 +1,4 @@
-# Lesson Time Tracker
-Cisco python 7 eğitici eğitimi  proje alanı
-
-Lesson Time Tracker Analiz Raporu
-
-
+# Lesson Time Tracker Analiz Raporu
 ## Kısa Özet
 Projenin Analiz çalışmasının kısa özeti 
 ## Problem Tanımı
@@ -19,11 +14,7 @@ Yazılımın gerçekleştirilmesi sürecinde kullanılan veriler ve kütüphanel
 ### 4. Kullanıcı Analizi 
 Yazılımı kullanacak olan ya da bu yazılımın paylaşılması durumunda kaynak kod üzerinden faydalanmak isteyecek kullanıcının profiline yönelik bilgiler yer almaktadır.
 
-
-
- 
 ## Proje ismi Tasarım Raporu
-
 ### Kısa Özet
 Projenin Tasarım sürecinde uygulanan süreç adımlarının ifade edildiği bölümdür. 
 ### Veri Tasarımı
@@ -36,7 +27,6 @@ Yazılım geliştirme süreci sırasında Nesne Yönelimli Programlama dikkate a
 Projenin rapor yazım süreçleri de dahil edilerek gerektiğinde iç içe geçmiş süreçlerinde ifade edilebileceği bölümdür. (Gannt Chart)
  
 ## Proje ismi Gerçekleştirme Raporu
-
 ### Karşılaşılan Sorunlar ve Uygulanan Çözümler
 Projenin gerçekleştirme sürecine karşılaşılan sorunlar ve gidermek için uygulanan çözümlerin ifade edildiği bölümler. 
 ### Proje Bileşenleri ve Görevleri
@@ -47,7 +37,6 @@ Yazılım kaynak kodunun github profilinde paylaşılması farklı bir kullanıc
 
  
 ## Proje ismi Test Raporu
-
 ### Karşılaşılan Sorunlar ve Uygulanan Çözümler
 Yazılım projesinin çalıştırılması ve test edilmesi süresince karşılaşılan sorunlar ve uygulanan çözümler yer almaktadır. 
 ### Test Sürecinde Kullanılan Modüller (Varsa) 
