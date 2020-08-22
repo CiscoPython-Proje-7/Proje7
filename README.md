@@ -1,4 +1,4 @@
-# Proje7
+# Lesson Time Tracker
 Cisco python 7 eğitici eğitimi  proje alanı
 
 Lesson Time Tracker Analiz Raporu
