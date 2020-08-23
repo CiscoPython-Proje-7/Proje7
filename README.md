@@ -27,18 +27,18 @@ Yazılım geliştirme süreci sırasında Nesne Yönelimli Programlama dikkate a
 ### Zaman Çizelgesi
 Projenin rapor yazım süreçleri de dahil edilerek gerektiğinde iç içe geçmiş süreçlerinde ifade edilebileceği bölümdür. (Gannt Chart)
  
-### Proje ismi Gerçekleştirme Raporu
-#### Karşılaşılan Sorunlar ve Uygulanan Çözümler
+## Lesson Time Tracker Gerçekleştirme Raporu
+### Karşılaşılan Sorunlar ve Uygulanan Çözümler
 Projenin gerçekleştirme sürecine karşılaşılan sorunlar ve gidermek için uygulanan çözümlerin ifade edildiği bölümler. 
-#### Proje Bileşenleri ve Görevleri
+### Proje Bileşenleri ve Görevleri
 Programa ait dökümantasyonun taslak halininde ortaya çıktığı bölümdür. 
-#### Github Yükleme Süreci
+### Github Yükleme Süreci
 Yazılım kaynak kodunun github profilinde paylaşılması farklı bir kullanıcı tarafından başka bir platforma yüklenmesi sürecinde yapılması gerekenlerin yer aldığı bölümdür. 
 
-### Proje ismi Test Raporu
-#### Karşılaşılan Sorunlar ve Uygulanan Çözümler
+## Lesson Time Tracker Test Raporu
+### Karşılaşılan Sorunlar ve Uygulanan Çözümler
 Yazılım projesinin çalıştırılması ve test edilmesi süresince karşılaşılan sorunlar ve uygulanan çözümler yer almaktadır. 
-#### Test Sürecinde Kullanılan Modüller (Varsa) 
+### Test Sürecinde Kullanılan Modüller (Varsa) 
 Proje test sürecinde gerektiğinde farklı modüller kullanılarak test çalışması gerçekleştirilmektedir. Proje sürecinde eğer bu modüllerden herhangi birini kullandıysanız. Modülü kullanırken yaptığınız kodlama bu bölümde yer almaktadır. 
  
 ### Görev dağılımı
