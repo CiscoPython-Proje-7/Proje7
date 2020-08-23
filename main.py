@@ -1,26 +1,29 @@
+import json
+import Settings
+import pygame
 from tkinter import * 
 from tkinter.ttk import *
 from win32api import GetMonitorInfo, MonitorFromPoint
-from time import strftime
-from datetime import datetime
+from datetime import datetime, timedelta
 
+# This function recursively calls itself every 1 second
 def time():
     # Get the time in HH:MM:SS format
-    current_time = strftime('%H:%M:%S')
+    current_time = '{:02}:{:02}:{:02}'.format(datetime.now().hour + settings['time_offset'], datetime.now().minute, datetime.now().second)
 
     # Display the time
     canvas.itemconfigure(text_current_time, text=current_time)
 
     # Get the current time
-    # current_date_time = datetime.strptime(current_date + current_time, '%Y-%m-%d %H:%M:%S')
+    current_date_time = datetime.strptime(current_date + current_time, '%Y-%m-%d %H:%M:%S')
 
-    global last_lesson_finished
+    global last_lesson_finished, first_run
 
     # If the last lesson is not finished
     if not last_lesson_finished:
 
         # Calculate the total number of seconds since the start of the first lesson
-        estimated_total_seconds = int((datetime.now() - first_lesson_starting_time).total_seconds())
+        estimated_total_seconds = int((current_date_time - first_lesson_starting_time).total_seconds())
 
         # Calculate and display progress bar for current time
         progress_bar_size = (estimated_total_seconds / total_school_day_seconds) * timeline_size
@@ -33,12 +36,20 @@ def time():
             rx0, ry0, rx1, ry1 = canvas.coords(rectangle)
             global last_completed_rectangle_x1
 
-            # Make the last finished lesson/break gray
-            if x1 > rx1 and rx1 > last_completed_rectangle_x1:
-                canvas.itemconfigure(rectangle, fill='#505050')
+            # Change the last finished lesson/break color
+            if x1 > rx1 and rx1 > last_completed_rectangle_x1 and (current_time.split(':')[2] == '00' or first_run):
+                if canvas.itemcget(rectangle, 'fill') == settings['lesson_color']:
+                    canvas.itemconfigure(rectangle, fill=settings['finished_lesson_color'])
+                    if not first_run:
+                        play(True)
+                else:
+                    canvas.itemconfigure(rectangle, fill=settings['finished_break_color'])
+                    if not first_run:
+                        play(False)
                 global completed_lesson_break_count
                 completed_lesson_break_count += 1
                 last_completed_rectangle_x1 = rx1
+
                 if completed_lesson_break_count == len(todays_timeslots):
                     last_lesson_finished = True
                     break
@@ -47,11 +58,14 @@ def time():
             end_time = datetime.strptime(current_date + todays_timeslots[completed_lesson_break_count].split('-')[1], '%Y-%m-%d %H:%M')
 
             # Calculate the remaining seconds for the lesson or break
-            remaining_seconds = int((end_time - datetime.now()).total_seconds()) + 1
+            remaining_seconds = int((end_time - current_date_time).total_seconds()) + 1
 
             # Display remaining time in MM:SS format
             remaining_time_text ='{:02}:{:02}'.format(remaining_seconds % 3600 // 60, remaining_seconds % 60)
             canvas.itemconfigure(text_remaining_time, text=remaining_time_text)
+    
+    if first_run:
+        first_run = False
 
     # Recursively call this function every 1 second
     form.after(1000, time)
@@ -71,7 +85,11 @@ def get_center_x(i):
     center_x = starting_x + half_width
     return center_x
 
-form = Tk()
+# Get the selected class data from JSON file
+def get_selected_class_data(class_name):
+    for current_class in data['days'][day]['classes']:
+        if current_class['class'] == class_name:
+            return current_class
 
 # This function can be used for closing the app
 def close_program():
@@ -81,11 +99,27 @@ def close_program():
 def disable_event():
     pass
 
+def play(isLesson):
+    if isLesson:
+        pygame.mixer.music.load("sounds/notification_1.mp3")
+    else:
+        pygame.mixer.music.load("sounds/notification_2.mp3")
+    pygame.mixer.music.play(loops=0)
+
+form = Tk()
+
+# Get application settings
+settings = Settings.getSettings()
+
+# Open the JSON file
+with open('weekly_schedule.json') as json_file:
+    data = json.load(json_file)
+
 # Make window allways on top and make it black and transparent
 form.protocol("WM_DELETE_WINDOW", disable_event)
 form.wm_attributes("-topmost", 1)
-form.wm_attributes("-alpha", 0.7)
-form['bg'] = 'black'
+form.wm_attributes("-alpha", settings['form_transparency'])
+form['bg'] = settings['form_background']
 
 # Get os screen width and height
 screen_width = form.winfo_screenwidth()
@@ -109,45 +143,36 @@ form.geometry("{}x{}+{}+{}".format(window_width, window_height, x_coordinate, y_
 form.resizable(False, False)
 form.overrideredirect(True)
 
-canvas = Canvas(form, width=window_width - 4, height=window_height - 2, background='black', highlightthickness=0)
+pygame.mixer.init()
+
+canvas = Canvas(form, width=window_width - 4, height=window_height - 2, background=settings['form_background'], highlightthickness=0)
 canvas.pack()
+
+# Get the number af day in week
+day = datetime.today().weekday() - 6
 
 # Create text for displaying remaining time on the left and current time on the right of timeline
 top_margin = 24
-text_remaining_time = canvas.create_text(64, top_margin, fill='red', font='calibri 42 bold')
-text_current_time = canvas.create_text(window_width-104, top_margin, fill='white', font='calibri 42 bold')
+selected_class = settings['selected_class']
+selected_class_data = get_selected_class_data(selected_class)
+class_name = canvas.create_text(34, top_margin - 10, fill=settings['class_name_font_color'], font=settings['class_name_font_style'], text=selected_class)
+text_remaining_time = canvas.create_text(34, top_margin + 10, fill=settings['remaining_time_font_color'], font=settings['remaining_time_font_style'])
+day_name = canvas.create_text(window_width - 60, top_margin - 10, fill=settings['day_name_font_color'], font=settings['day_name_font_style'], text=data['days'][day]['day'])
+text_current_time = canvas.create_text(window_width - 60, top_margin + 10, fill=settings['curent_time_font_color'], font=settings['curent_time_font_style'])
 
-todays_lessons = ['MAT', 'MAT', 'MAT', 'PTM', 'PTM', 'PTM', 'COG', 'COG']
-todays_timeslots = ['8:00-8:40',
-                    '8:40-8:50', 
-                    '8:50-9:30', 
-                    '9:30-9:40', 
-                    '9:40-10:20',
-                    '10:20-10:30',  
-                    '10:30-11:10', 
-                    '11:10-11:20', 
-                    '11:20-12:00', 
-                    '12:00-13:00', 
-                    '13:00-13:40', 
-                    '13:40-13:50', 
-                    '13:50-14:30', 
-                    '14:30-14:40', 
-                    '14:40-15:20']
+# Get selected classes lessons for today
+todays_lessons = selected_class_data['lessons']
 
-# todays_lessons = ['PTM', 'PTM', 'PTM']
-# todays_timeslots = ['18:50-19:30',
-#                     '19:30-19:40', 
-#                     '19:40-20:20', 
-#                     '20:20-20:30', 
-#                     '20:30-21:10']
+# Get lesson/break starting and ending times for selected class
+todays_timeslots = selected_class_data['timeslots']
 
 # Get current date in YY-MM-DD format
 current_date = str(datetime.today().year) + '-' + str(datetime.today().month) + '-' + str(datetime.today().day) + ' '
 
 # Get the number of lessons per day and set timeline coords
 lessons_per_day = len(todays_lessons)
-timeline_left_x = 134
-timeline_right_x = 1718
+timeline_left_x = 70
+timeline_right_x = 1800
 timeline_size = timeline_right_x - timeline_left_x
 
 # 
@@ -171,7 +196,7 @@ for i in range(lessons_per_day):
     right_x = get_x_from_time(todays_timeslots[i*2].split('-')[1])
 
     # Create a rectangle for each lesson
-    rectangles.append(canvas.create_rectangle(left_x, 2, right_x, 40, fill='#e8505b'))
+    rectangles.append(canvas.create_rectangle(left_x, 2, right_x, 40, fill=settings['lesson_color']))
 
     # Create texts for lesson numbers and lesson titles
     canvas.create_text(center_x, 10, text='{}. Ders'.format(i+1), fill='black', font='calibri 14')
@@ -183,12 +208,13 @@ for i in range(lessons_per_day):
 
     # Create a rectangle for each break
     if i < lessons_per_day - 1:
-        rectangles.append(canvas.create_rectangle(get_x_from_time(todays_timeslots[i*2+1].split('-')[0]), 2, get_x_from_time(todays_timeslots[i*2+1].split('-')[1]), 40, fill='#bac964'))
+        rectangles.append(canvas.create_rectangle(get_x_from_time(todays_timeslots[i*2+1].split('-')[0]), 2, get_x_from_time(todays_timeslots[i*2+1].split('-')[1]), 40, fill=settings['break_color']))
     
 
 completed_lesson_break_count = 0
 last_completed_rectangle_x1 = 0
 last_lesson_finished = False
+first_run = True
 
 time()
 
