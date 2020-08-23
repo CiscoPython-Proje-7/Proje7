@@ -16,7 +16,8 @@ Yazılımı kullanacak olan ya da bu yazılımın paylaşılması durumunda kayn
 
 ## Proje ismi Tasarım Raporu
 ### Kısa Özet
-Projenin Tasarım sürecinde uygulanan süreç adımlarının ifade edildiği bölümdür. 
+Özellikle pandemi sürecinde öğrenci dolaşımını azaltmak için farklı sınıf gruplarına farklı ders ve teneffüs zamanı uygulayabilmek gerekmektedir. Zaman bildirimi için kullanılan mevcut yöntem ders zili uygulamasıdır. Ancak bu bildirim farklı gruplara farklı zamanlarda bildirim vermeye uygun değildir. Bir grup öğrenci derse devam ederken diğer gruba zil ile bildirim göndermek karmaşaya ve ses kirliliğine neden olacaktır. Bu durum da bizi sınıflardaki öğrenciler ve öğretmenin akıllı tahtalarda ders akışını takip edebilecekleri bir araç geliştirme fikrine yönlendirmiştir. Projemizde ve öğrencinin ders gördüğü ortamlardaki akıllı tahtaların alt kısmında 50 pksel yüksekliğinde yarı şeffaf bir bar zaman bildirimi için kullanılacaktır. Bu bar farklı zaman dilimi uygulaması kullanılmadığı durulamrda dahi zaman bildirimi için yeni bir alternatif oluşturacak ve okulda zil kullanımına olan gereksinimi de tamamen ortadan kaldıracaktır. Proje aynı zamanda okul yöneticilerinin sınıf ders programlarını veritabanına kolay bir şekilde girebilmeleri için bir Django web uygulaması da içermektedir. Akıllı tahtalar seçilen sınıfa göre günlük ders programını gün boyunca; şu an hangi derste veya teneffüste oldukları, ders veya teneffüs bitimine ne kadar zaman kaldığı gibi bilgileri sınıftaki bireylerin başka bir bildirime (zil vb.) gerek duymadan takip edebilmelerini sağlayacaktır.
+
 ### Veri Tasarımı
 Projede veritabanı kullanıldığı durumda veritabanı diyagramı bu bölüm içerisinde yer almaktadır. 
 ### Ara yüz Tasarımı
@@ -34,15 +35,12 @@ Programa ait dökümantasyonun taslak halininde ortaya çıktığı bölümdür.
 ### Github Yükleme Süreci
 Yazılım kaynak kodunun github profilinde paylaşılması farklı bir kullanıcı tarafından başka bir platforma yüklenmesi sürecinde yapılması gerekenlerin yer aldığı bölümdür. 
 
-
- 
 ## Proje ismi Test Raporu
 ### Karşılaşılan Sorunlar ve Uygulanan Çözümler
 Yazılım projesinin çalıştırılması ve test edilmesi süresince karşılaşılan sorunlar ve uygulanan çözümler yer almaktadır. 
 ### Test Sürecinde Kullanılan Modüller (Varsa) 
 Proje test sürecinde gerektiğinde farklı modüller kullanılarak test çalışması gerçekleştirilmektedir. Proje sürecinde eğer bu modüllerden herhangi birini kullandıysanız. Modülü kullanırken yaptığınız kodlama bu bölümde yer almaktadır. 
  
-
 ## Görev dağılımı
 ### 1.	Analiz Raporunun Tamamlanması
 Yusuf Önder Akyol, Serkan Güner				
