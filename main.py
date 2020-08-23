@@ -1,5 +1,6 @@
-import json
 import Settings
+import requests
+import json
 import pygame
 from tkinter import * 
 from tkinter.ttk import *
@@ -111,9 +112,13 @@ form = Tk()
 # Get application settings
 settings = Settings.getSettings()
 
-# Open the JSON file
-with open('weekly_schedule.json') as json_file:
-    data = json.load(json_file)
+# Open local JSON file
+# with open('weekly_schedule.json') as json_file:
+#     data = json.load(json_file)
+
+# Open remote JSON file
+with requests.get("https://api.jsonbin.io/b/5f429a1d514ec5112d0ca631") as response:
+    data = response.json()
 
 # Make window allways on top and make it black and transparent
 form.protocol("WM_DELETE_WINDOW", disable_event)
