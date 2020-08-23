@@ -29,24 +29,20 @@ def setSettings(key, value, secondKey=False):
 
 # Default Settings
 # {
-#   "star": 12,
-#   "ending_time": 35,
-#   "minimum_population": 50,
-#   "maximum_population": 100,
-#   "maximum_generations": 50,
-#   "generation_tolerance": 1500,
-#   "mutation_rate_adjustment_trigger": 0.08,
-#   "lunchbreak": true,
-#   "elite_percent": 0.05,
-#   "deviation_tolerance": 55,
-#   "evaluation_matrix": {
-#     "subject_placement": 40,
-#     "lunch_break": 10,
-#     "student_rest": 10,
-#     "instructor_rest": 10,
-#     "idle_time": 10,
-#     "meeting_pattern": 10,
-#     "instructor_load": 10
-#   },
-#   "maximum_fitness": 100
+#     "form_background": "black", 
+#     "form_transparency": 0.7, 
+#     "class_name_font_style": "calibri 18 bold", 
+#     "class_name_font_color": "#e84a5f", 
+#     "remaining_time_font_style": "calibri 18 bold", 
+#     "remaining_time_font_color": "white", 
+#     "day_name_font_style": "calibri 18 bold", 
+#     "day_name_font_color": "#e84a5f",
+#     "curent_time_font_style": "calibri 18 bold", 
+#     "curent_time_font_color": "white",
+#     "finished_lesson_color": "#606060", 
+#     "finished_break_color": "#505050", 
+#     "lesson_color": "#e84a5f",
+#     "break_color": "#99b898",
+#     "selected_class": "9-C",
+#     "time_offset": 0
 # }
