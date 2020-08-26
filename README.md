@@ -8,9 +8,12 @@ Pandemi sürecinde öğrenci dolaşımını azaltmak için farklı sınıf grupl
 ### Analiz Süreci
 Problemin çözümü için proje ekibimizle yaptığımız uzaktan toplantılarda problemin detaylı analizi gerçekleştirldi. Bu toplantılarda Her sınıfa akıllı tahta bulunması, bu tahtalardan genelde öğretmenler odalarında da bulunması bu projenin kullanılabilirliğinin olduğu görüşü ağırlık kazanmıştır. Bu analizler sonucunda doğal olarak  programlama dili olarak Python kullanılmasına. Programın görsel tasarımında Tkinter modülünün kulllanılmasına,  pygame modülünün kullanılmasına ve günlük ders programının tutulması içinse JSon modülünün kullanılmasının uyğun olacağı kararına varıldı.
 #### 1. İhtiyaç Analizi
-Projeye duyulan ihtiyaç ifade edilir. Bu yazılımın kullanım sebepleri yine bu bölümde ifade edilebilecektir. 
+Tüm dünyada olduğu gibi Ülkemizde'de pandemiden dolayı eğitime ara verildi. Bu süreçte eğitim Eba gibi online platformlar üzerinden gerçekleşti. Her ne kadar dünyadaki diğer ülkelerden uzaktan eğiğtime en hızlı adapte olmuş olsak da hiç bir eğitim yüz yüze ğitim kadar etkili olmamaıştır, olmayacaktır da. Yeni eğitim öğretim yılında Bakanlığımızın birinci önceliği sağlıklı ortamlarda öğrencilerin eğitimine okullarında, sınıflarında devam edebilmeleridir. Ancak bunun da çok fazla riski mevcuttur. Aynı anda derse girmek, aynı anda teneffüs yapmak öğrencilerin bir birleriyle daha çok etkileşimli olmaları anlamına gelmektedir. Hem eğitimin okullarda yapılması, hem de virüs bulaşısını en aza indirebilmek bu sürecin sağlıklı atlatılması nasıl sağlanabilir. Bu sorunun üstesinden gelebilmek için bir programa ihtiyaç duyulmuştur.
+
+ 
 #### 2. İçerik Analizi 
-Projenin içeriğine dair alınan kararlar ifade edilir. Yazılımda gerçekleştirilebilecek işlemler ve yazılımın kazanması gereken yetenekler üzerine bilgiler içermektedir.
+ Bu proje kapsamında; Eğitim okulda yüz yüze yapılmalı, Öğrenciler derslere şube düzeyinde kademeli olarak  girmeli teneffüslere de kademeli olarak çıkmalı. öğrencilerin teneffüslerde minimum karşılaşmalı, derse giriş ve çıkışlarında karışıklığa sebebiyet vermemek için zil sistemi kullanılmamalı. Sistem Akıllı tahtaları kurulmalı ve ders , teneffüs süreleri akıllı tahtalar üzerinde takip edilmeli.
+
 #### 3. Durum Ortam Analizi
 Yazılımın gerçekleştirilmesi sürecinde kullanılan veriler ve kütüphaneler vb. bilgiler yer almaktadır. 
 #### 4. Kullanıcı Analizi 
