@@ -15,8 +15,18 @@ Tüm dünyada olduğu gibi Ülkemizde'de pandemiden dolayı eğitime ara verildi
  Bu proje kapsamında; Eğitim okulda yüz yüze yapılmalı, Öğrenciler derslere şube düzeyinde kademeli olarak  girmeli teneffüslere de kademeli olarak çıkmalı. öğrencilerin teneffüslerde minimum karşılaşmalı, derse giriş ve çıkışlarında karışıklığa sebebiyet vermemek için zil sistemi kullanılmamalı. Sistem Akıllı tahtaları kurulmalı ve ders , teneffüs süreleri akıllı tahtalar üzerinde takip edilmeli.
 
 #### 3. Durum Ortam Analizi
+Yazılımı gerçekleştirirken;
+ Settings,
+ requests,
+ json,
+ pygame,
+ tkinter,
+ win32api,
+ datetime isimli python kütüphanelerinden faydalanılmıştır.
 Yazılımın gerçekleştirilmesi sürecinde kullanılan veriler ve kütüphaneler vb. bilgiler yer almaktadır. 
 #### 4. Kullanıcı Analizi 
+Bu yazılım Ülkemizde ve tüm dünyadaki resmi ya da özel okullarda görev yapan idarecilerin rahatlıkla kullanabilmeleri için yazılmıştır.
+
 Yazılımı kullanacak olan ya da bu yazılımın paylaşılması durumunda kaynak kod üzerinden faydalanmak isteyecek kullanıcının profiline yönelik bilgiler yer almaktadır.
 
 ## Lesson Time Tracker Tasarım Raporu
