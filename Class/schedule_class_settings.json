@@ -9,10 +9,11 @@
     "day_name_font_color": "#e84a5f",
     "curent_time_font_style": "calibri 18 bold", 
     "curent_time_font_color": "white",
-    "finished_lesson_color": "#606060", 
+    "finished_lesson_color": "#4a4a4a", 
     "finished_break_color": "#505050", 
-    "lesson_color": "#e84a5f",
-    "break_color": "#99b898",
+    "lesson_color": "#fd5e53",
+    "break_color": "#8cba51",
     "selected_class": "9-A",
-    "time_offset": -10
+    "time_offset": -10,
+    "day_offset": 0
 }

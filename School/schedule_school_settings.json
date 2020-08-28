@@ -1,0 +1,23 @@
+{
+    "form_background": "black", 
+    "form_transparency": 1.0, 
+    "class_name_font_style": "calibri 18 bold", 
+    "class_name_font_color": "white", 
+    "remaining_time_font_style": "calibri 18 bold", 
+    "remaining_time_font_color": "white", 
+    "title_font_style": "calibri 24 bold", 
+    "title_font_color": "#e84a5f",
+    "hour_indicator_text_font_style": "calibri 14", 
+    "hour_indicator_text_font_color": "#404040",
+    "half_hour_indicator_text_font_style": "calibri 12", 
+    "half_hour_indicator_text_font_color": "#303030",
+    "curent_time_font_style": "calibri 24 bold", 
+    "curent_time_font_color": "white",
+    "finished_lesson_color": "#4a4a4a", 
+    "finished_break_color": "#505050", 
+    "lesson_color": "#fd5e53",
+    "break_color": "#8cba51",
+    "title_height": 80,
+    "time_offset": -10,
+    "day_offset": 1
+}

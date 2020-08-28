@@ -1,4 +1,4 @@
-import Settings
+import ScheduleClassSettings
 import requests
 import json
 import pygame
@@ -110,15 +110,15 @@ def play(isLesson):
 form = Tk()
 
 # Get application settings
-settings = Settings.getSettings()
+settings = ScheduleClassSettings.getSettings()
 
 # Open local JSON file
-# with open('weekly_schedule.json') as json_file:
-#     data = json.load(json_file)
+with open('../data/weekly_schedule.json') as json_file:
+    data = json.load(json_file)
 
 # Open remote JSON file
-with requests.get("https://api.jsonbin.io/b/5f429a1d514ec5112d0ca631") as response:
-    data = response.json()
+# with requests.get("https://api.jsonbin.io/b/5f429a1d514ec5112d0ca631") as response:
+#     data = response.json()
 
 # Make window allways on top and make it black and transparent
 form.protocol("WM_DELETE_WINDOW", disable_event)
@@ -154,31 +154,33 @@ canvas = Canvas(form, width=window_width - 4, height=window_height - 2, backgrou
 canvas.pack()
 
 # Get the number af day in week
-day = datetime.today().weekday() - 6
+day = datetime.today().weekday() + settings["day_offset"]
+
+
+timeline_left_x = 100
+timeline_right_x = 1800
+timeline_size = timeline_right_x - timeline_left_x
 
 # Create text for displaying remaining time on the left and current time on the right of timeline
 top_margin = 24
 selected_class = settings['selected_class']
 selected_class_data = get_selected_class_data(selected_class)
-class_name = canvas.create_text(34, top_margin - 10, fill=settings['class_name_font_color'], font=settings['class_name_font_style'], text=selected_class)
-text_remaining_time = canvas.create_text(34, top_margin + 10, fill=settings['remaining_time_font_color'], font=settings['remaining_time_font_style'])
+class_name = canvas.create_text(timeline_left_x / 2, top_margin - 10, fill=settings['class_name_font_color'], font=settings['class_name_font_style'], text=selected_class)
+text_remaining_time = canvas.create_text(timeline_left_x / 2, top_margin + 10, fill=settings['remaining_time_font_color'], font=settings['remaining_time_font_style'])
 day_name = canvas.create_text(window_width - 60, top_margin - 10, fill=settings['day_name_font_color'], font=settings['day_name_font_style'], text=data['days'][day]['day'])
 text_current_time = canvas.create_text(window_width - 60, top_margin + 10, fill=settings['curent_time_font_color'], font=settings['curent_time_font_style'])
-
-# Get selected classes lessons for today
-todays_lessons = selected_class_data['lessons']
 
 # Get lesson/break starting and ending times for selected class
 todays_timeslots = selected_class_data['timeslots']
 
-# Get current date in YY-MM-DD format
-current_date = str(datetime.today().year) + '-' + str(datetime.today().month) + '-' + str(datetime.today().day) + ' '
+# Get selected classes lessons for today
+todays_lessons = selected_class_data['lessons']
 
 # Get the number of lessons per day and set timeline coords
 lessons_per_day = len(todays_lessons)
-timeline_left_x = 70
-timeline_right_x = 1800
-timeline_size = timeline_right_x - timeline_left_x
+
+# Get current date in YY-MM-DD format
+current_date = str(datetime.today().year) + '-' + str(datetime.today().month) + '-' + str(datetime.today().day) + ' '
 
 # 
 first_lesson_starting_time = datetime.strptime(current_date + todays_timeslots[0].split('-')[0], '%Y-%m-%d %H:%M')

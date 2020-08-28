@@ -1,0 +1,1469 @@
+{ 
+  "days": [
+    {
+      "day": "Pazartesi",
+      "classes": [
+        {
+          "class": "9-A",
+          "lessons": [
+            "MAT",
+            "MAT",
+            "MAT",
+            "PTM",
+            "PTM",
+            "PTM",
+            "COG",
+            "COG"
+          ],
+          "teachers": [
+            "Kenan Kan\u0131\u015fmak",
+            "Kenan Kan\u0131\u015fmak",
+            "Kenan Kan\u0131\u015fmak",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Selvihan K\u0131l\u0131\u00e7",
+            "Selvihan K\u0131l\u0131\u00e7"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "9-B",
+          "lessons": [
+            "BIY",
+            "BIY",
+            "TDE",
+            "TDE",
+            "BTU",
+            "BTU",
+            "PTM",
+            "PTM"
+          ],
+          "teachers": [
+            "Atalay Akyol",
+            "Atalay Akyol",
+            "\u0130rfan G\u00fclmez",
+            "\u0130rfan G\u00fclmez",
+            "Mujdat Karakele\u015f",
+            "Mujdat Karakele\u015f",
+            "Mahmut Atik",
+            "Mahmut Atik"
+          ],
+          "timeslots": [
+            "8:10-8:50",
+            "8:50-9:00",
+            "9:00-9:40",
+            "9:40-9:50",
+            "9:50-10:30",
+            "10:30-10:40",
+            "10:40-11:20",
+            "11:20-11:30",
+            "11:30-12:10",
+            "12:10-13:10",
+            "13:10-13:50",
+            "13:50-14:00",
+            "14:00-14:40",
+            "14:40-14:50",
+            "14:50-15:30"
+          ]
+        },
+        {
+          "class": "9-C",
+          "lessons": [
+            "BTT",
+            "BTT",
+            "BTT",
+            "YDL",
+            "YDL",
+            "YDL",
+            "FIZ",
+            "FIZ"
+          ],
+          "teachers": [
+            "Erdo\u011fan Yavuz",
+            "Erdo\u011fan Yavuz",
+            "Erdo\u011fan Yavuz",
+            "Necla Kurtg\u00f6z",
+            "Necla Kurtg\u00f6z",
+            "Necla Kurtg\u00f6z",
+            "Sadi Erdo\u011fdu",
+            "Sadi Erdo\u011fdu"
+          ],
+          "timeslots": [
+            "8:20-9:00",
+            "9:00-9:10",
+            "9:10-9:50",
+            "9:50-10:00",
+            "10:00-10:40",
+            "10:40-10:50",
+            "10:50-11:30",
+            "11:30-11:40",
+            "11:40-12:20",
+            "12:20-13:20",
+            "13:20-14:00",
+            "14:00-14:10",
+            "14:10-14:50",
+            "14:50-15:00",
+            "15:00-15:40"
+          ]
+        },
+        {
+          "class": "9-D",
+          "lessons": [
+            "MGA",
+            "MGA",
+            "TAR",
+            "TAR",
+            "KIM",
+            "KIM",
+            "DIN",
+            "DIN"
+          ],
+          "teachers": [
+            "Murat G\u00fcler",
+            "Murat G\u00fcler",
+            "\u0130lhan Erdo\u011fan",
+            "\u0130lhan Erdo\u011fan",
+            "\u015eeyma Gencer",
+            "\u015eeyma Gencer",
+            "H\u00fcsne G\u00fcndo\u011fdu",
+            "H\u00fcsne G\u00fcndo\u011fdu"
+          ],
+          "timeslots": [
+            "8:30-9:10",
+            "9:10-9:20",
+            "9:20-10:00",
+            "10:00-10:10",
+            "10:10-10:50",
+            "10:50-11:00",
+            "11:00-11:40",
+            "11:40-11:50",
+            "11:50-12:30",
+            "12:30-13:30",
+            "13:30-14:10",
+            "14:10-14:20",
+            "14:20-15:00",
+            "15:00-15:10",
+            "15:10-15:50"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Sal\u0131",
+      "classes": [
+        {
+          "class": "9-A",
+          "lessons": [
+            "YDL",
+            "YDL",
+            "YDL",
+            "BED",
+            "BED",
+            "TDE",
+            "TDE",
+            "TDE"
+          ],
+          "teachers": [
+            "\u015eahin Aslan",
+            "\u015eahin Aslan",
+            "\u015eahin Aslan",
+            "Faik \u00c7elik",
+            "Faik \u00c7elik",
+            "A. Zeki \u00d6\u011f\u00fct",
+            "A. Zeki \u00d6\u011f\u00fct",
+            "A. Zeki \u00d6\u011f\u00fct"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "9-B",
+          "lessons": [
+            "BED",
+            "BED",
+            "PTM",
+            "PTM",
+            "FIZ",
+            "FIZ",
+            "TAR",
+            "TAR"
+          ],
+          "teachers": [
+            "Serpil Candemir",
+            "Serpil Candemir",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Sadi Erdo\u011fdu",
+            "Sadi Erdo\u011fdu",
+            "Ali Cansu",
+            "Ali Cansu"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "9-C",
+          "lessons": [
+            "YDL",
+            "YDL",
+            "TDE",
+            "TDE",
+            "TDE",
+            "TDE",
+            "BED",
+            "BED"
+          ],
+          "teachers": [
+            "Necla Kurtg\u00f6z",
+            "Necla Kurtg\u00f6z",
+            "Ahmet G\u00fcrb\u00fcz",
+            "Ahmet G\u00fcrb\u00fcz",
+            "Ahmet G\u00fcrb\u00fcz",
+            "Ahmet G\u00fcrb\u00fcz",
+            "Faik \u00c7elik",
+            "Faik \u00c7elik"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "\u00c7ar\u015famba",
+      "classes": [
+        {
+          "class": "9-A",
+          "lessons": [
+            "BIY",
+            "BIY",
+            "FIZ",
+            "FIZ",
+            "DIN",
+            "DIN",
+            "TAR",
+            "TAR"
+          ],
+          "teachers": [
+            "Atalay Akyol",
+            "Atalay Akyol",
+            "Sadi Erdo\u011fdu",
+            "Sadi Erdo\u011fdu",
+            "Abdurrahman Y\u0131ld\u0131r\u0131m",
+            "Abdurrahman Y\u0131ld\u0131r\u0131m",
+            "Ali Cansu",
+            "Ali Cansu"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "9-B",
+          "lessons": [
+            "MGA",
+            "MGA",
+            "BTU",
+            "BTU",
+            "YDL",
+            "YDL",
+            "MAT",
+            "MAT"
+          ],
+          "teachers": [
+            "Murat G\u00fcler",
+            "Murat G\u00fcler",
+            "Mujdat Karakele\u015f",
+            "Mujdat Karakele\u015f",
+            "Banu Ayaz",
+            "Banu Ayaz",
+            "Sabri \u00c7evik",
+            "Sabri \u00c7evik"
+          ],
+          "timeslots": [
+            "8:10-8:50",
+            "8:50-9:00",
+            "9:00-9:40",
+            "9:40-9:50",
+            "9:50-10:30",
+            "10:30-10:40",
+            "10:40-11:20",
+            "11:20-11:30",
+            "11:30-12:10",
+            "12:10-13:10",
+            "13:10-13:50",
+            "13:50-14:00",
+            "14:00-14:40",
+            "14:40-14:50",
+            "14:50-15:30"
+          ]
+        },
+        {
+          "class": "9-C",
+          "lessons": [
+            "MAT",
+            "MAT",
+            "MAT",
+            "PTM",
+            "PTM",
+            "PTM",
+            "KIM",
+            "KIM"
+          ],
+          "teachers": [
+            "F. Mehmet \u00d6zhan",
+            "F. Mehmet \u00d6zhan",
+            "F. Mehmet \u00d6zhan",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "\u015eeyma Gencer",
+            "\u015eeyma Gencer"
+          ],
+          "timeslots": [
+            "8:20-9:00",
+            "9:00-9:10",
+            "9:10-9:50",
+            "9:50-10:00",
+            "10:00-10:40",
+            "10:40-10:50",
+            "10:50-11:30",
+            "11:30-11:40",
+            "11:40-12:20",
+            "12:20-13:20",
+            "13:20-14:00",
+            "14:00-14:10",
+            "14:10-14:50",
+            "14:50-15:00",
+            "15:00-15:40"
+          ]
+        },
+        {
+          "class": "9-D",
+          "lessons": [
+            "DIN",
+            "DIN",
+            "BTT",
+            "BTT",
+            "BTT",
+            "TDE",
+            "TDE",
+            "TDE"
+          ],
+          "teachers": [
+            "Abdurrahman Y\u0131ld\u0131r\u0131m",
+            "Abdurrahman Y\u0131ld\u0131r\u0131m",
+            "\u0130smail Ta\u015fova",
+            "\u0130smail Ta\u015fova",
+            "\u0130smail Ta\u015fova",
+            "Seval G. Sancak",
+            "Seval G. Sancak",
+            "Seval G. Sancak"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "9-E",
+          "lessons": [
+            "MAT",
+            "MAT",
+            "MAT",
+            "MUH",
+            "MUH",
+            "MUH",
+            "COG",
+            "COG"
+          ],
+          "teachers": [
+            "Sabri \u00c7evik",
+            "Sabri \u00c7evik",
+            "Sabri \u00c7evik",
+            "U\u011fur \u015eim\u015fek",
+            "U\u011fur \u015eim\u015fek",
+            "U\u011fur \u015eim\u015fek",
+            "Selvihan K\u0131l\u0131\u00e7",
+            "Selvihan K\u0131l\u0131\u00e7"
+          ],
+          "timeslots": [
+            "8:10-8:50",
+            "8:50-9:00",
+            "9:00-9:40",
+            "9:40-9:50",
+            "9:50-10:30",
+            "10:30-10:40",
+            "10:40-11:20",
+            "11:20-11:30",
+            "11:30-12:10",
+            "12:10-13:10",
+            "13:10-13:50",
+            "13:50-14:00",
+            "14:00-14:40",
+            "14:40-14:50",
+            "14:50-15:30"
+          ]
+        },
+        {
+          "class": "9-F",
+          "lessons": [
+            "YDL",
+            "YDL",
+            "YDL",
+            "BED",
+            "BED",
+            "TDE",
+            "TDE",
+            "TDE"
+          ],
+          "teachers": [
+            "Necla Kurtg\u00f6z",
+            "Necla Kurtg\u00f6z",
+            "Necla Kurtg\u00f6z",
+            "Serpil Candemir",
+            "Serpil Candemir",
+            "A. R\u0131za Demirci",
+            "A. R\u0131za Demirci",
+            "A. R\u0131za Demirci"
+          ],
+          "timeslots": [
+            "8:20-9:00",
+            "9:00-9:10",
+            "9:10-9:50",
+            "9:50-10:00",
+            "10:00-10:40",
+            "10:40-10:50",
+            "10:50-11:30",
+            "11:30-11:40",
+            "11:40-12:20",
+            "12:20-13:20",
+            "13:20-14:00",
+            "14:00-14:10",
+            "14:10-14:50",
+            "14:50-15:00",
+            "15:00-15:40"
+          ]
+        },
+        {
+          "class": "10-A",
+          "lessons": [
+            "OP",
+            "OP",
+            "BTR",
+            "BTR",
+            "PTM",
+            "PTM",
+            "PTM",
+            "PTM"
+          ],
+          "teachers": [
+            "Erdo\u011fan Yavuz",
+            "Erdo\u011fan Yavuz",
+            "H\u00fcseyin \u00d6ver",
+            "H\u00fcseyin \u00d6ver",
+            "Serdar Asarkaya",
+            "Serdar Asarkaya",
+            "Serdar Asarkaya",
+            "Serdar Asarkaya"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "10-B",
+          "lessons": [
+            "FEL",
+            "FEL",
+            "FIZ",
+            "FIZ",
+            "YDL",
+            "YDL",
+            "COG",
+            "COG"
+          ],
+          "teachers": [
+            "Adnan Uzun",
+            "Adnan Uzun",
+            "Sadi Erdo\u011fdu",
+            "Sadi Erdo\u011fdu",
+            "\u015eahin Aslan",
+            "\u015eahin Aslan",
+            "Selvihan K\u0131l\u0131\u00e7",
+            "Selvihan K\u0131l\u0131\u00e7"
+          ],
+          "timeslots": [
+            "8:10-8:50",
+            "8:50-9:00",
+            "9:00-9:40",
+            "9:40-9:50",
+            "9:50-10:30",
+            "10:30-10:40",
+            "10:40-11:20",
+            "11:20-11:30",
+            "11:30-12:10",
+            "12:10-13:10",
+            "13:10-13:50",
+            "13:50-14:00",
+            "14:00-14:40",
+            "14:40-14:50",
+            "14:50-15:30"
+          ]
+        },
+        {
+          "class": "10-C",
+          "lessons": [
+            "MAT",
+            "MAT",
+            "MAT",
+            "MAM",
+            "MAM",
+            "MAM",
+            "BED",
+            "BED"
+          ],
+          "teachers": [
+            "Kenan Kan\u0131\u015fmak",
+            "Kenan Kan\u0131\u015fmak",
+            "Kenan Kan\u0131\u015fmak",
+            "M. O\u011fuz Akpolat",
+            "M. O\u011fuz Akpolat",
+            "M. O\u011fuz Akpolat",
+            "Serpil Candemir",
+            "Serpil Candemir"
+          ],
+          "timeslots": [
+            "8:20-9:00",
+            "9:00-9:10",
+            "9:10-9:50",
+            "9:50-10:00",
+            "10:00-10:40",
+            "10:40-10:50",
+            "10:50-11:30",
+            "11:30-11:40",
+            "11:40-12:20",
+            "12:20-13:20",
+            "13:20-14:00",
+            "14:00-14:10",
+            "14:10-14:50",
+            "14:50-15:00",
+            "15:00-15:40"
+          ]
+        },
+        {
+          "class": "10-D",
+          "lessons": [
+            "MAT",
+            "MAT",
+            "BIY",
+            "BIY",
+            "COG",
+            "COG",
+            "DIN",
+            "DIN"
+          ],
+          "teachers": [
+            "F. Mehmet \u00d6zhan",
+            "F. Mehmet \u00d6zhan",
+            "Atalay Akyol",
+            "Atalay Akyol",
+            "Selvihan K\u0131l\u0131\u00e7",
+            "Selvihan K\u0131l\u0131\u00e7",
+            "H\u00fcsne G\u00fcndo\u011fdu",
+            "H\u00fcsne G\u00fcndo\u011fdu"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "11-A",
+          "lessons": [
+            "ASY",
+            "ASY",
+            "ASY",
+            "ASY",
+            "ASY",
+            "ASY",
+            "FEL",
+            "FEL"
+          ],
+          "teachers": [
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Adnan Uzun",
+            "Adnan Uzun"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "11-B",
+          "lessons": [
+            "BED",
+            "BED",
+            "YDL",
+            "YDL",
+            "NTP",
+            "NTP",
+            "NTP",
+            "NTP"
+          ],
+          "teachers": [
+            "Faik \u00c7elik",
+            "Faik \u00c7elik",
+            "Banu Ayaz",
+            "Banu Ayaz",
+            "H\u00fcseyin \u00d6ver",
+            "H\u00fcseyin \u00d6ver",
+            "H\u00fcseyin \u00d6ver",
+            "H\u00fcseyin \u00d6ver"
+          ],
+          "timeslots": [
+            "8:10-8:50",
+            "8:50-9:00",
+            "9:00-9:40",
+            "9:40-9:50",
+            "9:50-10:30",
+            "10:30-10:40",
+            "10:40-11:20",
+            "11:20-11:30",
+            "11:30-12:10",
+            "12:10-13:10",
+            "13:10-13:50",
+            "13:50-14:00",
+            "14:00-14:40",
+            "14:40-14:50",
+            "14:50-15:30"
+          ]
+        },
+        {
+          "class": "11-C",
+          "lessons": [
+            "TDE",
+            "TDE",
+            "TDE",
+            "TDE",
+            "MUH",
+            "MUH",
+            "MUH",
+            "MUH"
+          ],
+          "teachers": [
+            "\u0130rfan G\u00fclmez",
+            "\u0130rfan G\u00fclmez",
+            "\u0130rfan G\u00fclmez",
+            "\u0130rfan G\u00fclmez",
+            "Necmettin A\u00e7\u0131kkap\u0131",
+            "Necmettin A\u00e7\u0131kkap\u0131",
+            "Necmettin A\u00e7\u0131kkap\u0131",
+            "Necmettin A\u00e7\u0131kkap\u0131"
+          ],
+          "timeslots": [
+            "8:20-9:00",
+            "9:00-9:10",
+            "9:10-9:50",
+            "9:50-10:00",
+            "10:00-10:40",
+            "10:40-10:50",
+            "10:50-11:30",
+            "11:30-11:40",
+            "11:40-12:20",
+            "12:20-13:20",
+            "13:20-14:00",
+            "14:00-14:10",
+            "14:10-14:50",
+            "14:50-15:00",
+            "15:00-15:40"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Per\u015fembe",
+      "classes": [
+        {
+          "class": "9-A",
+          "lessons": [
+            "YDL",
+            "YDL",
+            "YDL",
+            "BED",
+            "BED",
+            "TDE",
+            "TDE",
+            "TDE"
+          ],
+          "teachers": [
+            "\u015eahin Aslan",
+            "\u015eahin Aslan",
+            "\u015eahin Aslan",
+            "Faik \u00c7elik",
+            "Faik \u00c7elik",
+            "A. Zeki \u00d6\u011f\u00fct",
+            "A. Zeki \u00d6\u011f\u00fct",
+            "A. Zeki \u00d6\u011f\u00fct"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "9-B",
+          "lessons": [
+            "BED",
+            "BED",
+            "PTM",
+            "PTM",
+            "FIZ",
+            "FIZ",
+            "TAR",
+            "TAR"
+          ],
+          "teachers": [
+            "Serpil Candemir",
+            "Serpil Candemir",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Sadi Erdo\u011fdu",
+            "Sadi Erdo\u011fdu",
+            "Ali Cansu",
+            "Ali Cansu"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "9-C",
+          "lessons": [
+            "YDL",
+            "YDL",
+            "TDE",
+            "TDE",
+            "TDE",
+            "TDE",
+            "BED",
+            "BED"
+          ],
+          "teachers": [
+            "Necla Kurtg\u00f6z",
+            "Necla Kurtg\u00f6z",
+            "Ahmet G\u00fcrb\u00fcz",
+            "Ahmet G\u00fcrb\u00fcz",
+            "Ahmet G\u00fcrb\u00fcz",
+            "Ahmet G\u00fcrb\u00fcz",
+            "Faik \u00c7elik",
+            "Faik \u00c7elik"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Cuma",
+      "classes": [
+        {
+          "class": "9-A",
+          "lessons": [
+            "BIY",
+            "BIY",
+            "FIZ",
+            "FIZ",
+            "DIN",
+            "DIN",
+            "TAR",
+            "TAR"
+          ],
+          "teachers": [
+            "Atalay Akyol",
+            "Atalay Akyol",
+            "Sadi Erdo\u011fdu",
+            "Sadi Erdo\u011fdu",
+            "Abdurrahman Y\u0131ld\u0131r\u0131m",
+            "Abdurrahman Y\u0131ld\u0131r\u0131m",
+            "Ali Cansu",
+            "Ali Cansu"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "9-B",
+          "lessons": [
+            "MGA",
+            "MGA",
+            "BTU",
+            "BTU",
+            "YDL",
+            "YDL",
+            "MAT",
+            "MAT"
+          ],
+          "teachers": [
+            "Murat G\u00fcler",
+            "Murat G\u00fcler",
+            "Mujdat Karakele\u015f",
+            "Mujdat Karakele\u015f",
+            "Banu Ayaz",
+            "Banu Ayaz",
+            "Sabri \u00c7evik",
+            "Sabri \u00c7evik"
+          ],
+          "timeslots": [
+            "8:10-8:50",
+            "8:50-9:00",
+            "9:00-9:40",
+            "9:40-9:50",
+            "9:50-10:30",
+            "10:30-10:40",
+            "10:40-11:20",
+            "11:20-11:30",
+            "11:30-12:10",
+            "12:10-13:10",
+            "13:10-13:50",
+            "13:50-14:00",
+            "14:00-14:40",
+            "14:40-14:50",
+            "14:50-15:30"
+          ]
+        },
+        {
+          "class": "9-C",
+          "lessons": [
+            "MAT",
+            "MAT",
+            "MAT",
+            "YDL",
+            "YDL",
+            "YDL",
+            "KIM",
+            "KIM"
+          ],
+          "teachers": [
+            "F. Mehmet \u00d6zhan",
+            "F. Mehmet \u00d6zhan",
+            "F. Mehmet \u00d6zhan",
+            "Necla Kurtg\u00f6z",
+            "Necla Kurtg\u00f6z",
+            "Necla Kurtg\u00f6z",
+            "\u015eeyma Gencer",
+            "\u015eeyma Gencer"
+          ],
+          "timeslots": [
+            "8:20-9:00",
+            "9:00-9:10",
+            "9:10-9:50",
+            "9:50-10:00",
+            "10:00-10:40",
+            "10:40-10:50",
+            "10:50-11:30",
+            "11:30-11:40",
+            "11:40-12:20",
+            "12:20-13:20",
+            "13:20-14:00",
+            "14:00-14:10",
+            "14:10-14:50",
+            "14:50-15:00",
+            "15:00-15:40"
+          ]
+        },
+        {
+          "class": "9-D",
+          "lessons": [
+            "DIN",
+            "DIN",
+            "BTT",
+            "BTT",
+            "BTT",
+            "TDE",
+            "TDE",
+            "TDE"
+          ],
+          "teachers": [
+            "Abdurrahman Y\u0131ld\u0131r\u0131m",
+            "Abdurrahman Y\u0131ld\u0131r\u0131m",
+            "\u0130smail Ta\u015fova",
+            "\u0130smail Ta\u015fova",
+            "\u0130smail Ta\u015fova",
+            "Seval G. Sancak",
+            "Seval G. Sancak",
+            "Seval G. Sancak"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "9-E",
+          "lessons": [
+            "MAT",
+            "MAT",
+            "MAT",
+            "MUH",
+            "MUH",
+            "MUH",
+            "COG",
+            "COG"
+          ],
+          "teachers": [
+            "Sabri \u00c7evik",
+            "Sabri \u00c7evik",
+            "Sabri \u00c7evik",
+            "U\u011fur \u015eim\u015fek",
+            "U\u011fur \u015eim\u015fek",
+            "U\u011fur \u015eim\u015fek",
+            "Selvihan K\u0131l\u0131\u00e7",
+            "Selvihan K\u0131l\u0131\u00e7"
+          ],
+          "timeslots": [
+            "8:10-8:50",
+            "8:50-9:00",
+            "9:00-9:40",
+            "9:40-9:50",
+            "9:50-10:30",
+            "10:30-10:40",
+            "10:40-11:20",
+            "11:20-11:30",
+            "11:30-12:10",
+            "12:10-13:10",
+            "13:10-13:50",
+            "13:50-14:00",
+            "14:00-14:40",
+            "14:40-14:50",
+            "14:50-15:30"
+          ]
+        },
+        {
+          "class": "9-F",
+          "lessons": [
+            "YDL",
+            "YDL",
+            "YDL",
+            "BED",
+            "BED",
+            "TDE",
+            "TDE",
+            "TDE"
+          ],
+          "teachers": [
+            "Necla Kurtg\u00f6z",
+            "Necla Kurtg\u00f6z",
+            "Necla Kurtg\u00f6z",
+            "Serpil Candemir",
+            "Serpil Candemir",
+            "A. R\u0131za Demirci",
+            "A. R\u0131za Demirci",
+            "A. R\u0131za Demirci"
+          ],
+          "timeslots": [
+            "8:20-9:00",
+            "9:00-9:10",
+            "9:10-9:50",
+            "9:50-10:00",
+            "10:00-10:40",
+            "10:40-10:50",
+            "10:50-11:30",
+            "11:30-11:40",
+            "11:40-12:20",
+            "12:20-13:20",
+            "13:20-14:00",
+            "14:00-14:10",
+            "14:10-14:50",
+            "14:50-15:00",
+            "15:00-15:40"
+          ]
+        },
+        {
+          "class": "10-A",
+          "lessons": [
+            "OP",
+            "OP",
+            "BTR",
+            "BTR",
+            "PTM",
+            "PTM",
+            "PTM",
+            "PTM"
+          ],
+          "teachers": [
+            "Erdo\u011fan Yavuz",
+            "Erdo\u011fan Yavuz",
+            "H\u00fcseyin \u00d6ver",
+            "H\u00fcseyin \u00d6ver",
+            "Serdar Asarkaya",
+            "Serdar Asarkaya",
+            "Serdar Asarkaya",
+            "Serdar Asarkaya"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "10-B",
+          "lessons": [
+            "FEL",
+            "FEL",
+            "FIZ",
+            "FIZ",
+            "YDL",
+            "YDL",
+            "COG",
+            "COG"
+          ],
+          "teachers": [
+            "Adnan Uzun",
+            "Adnan Uzun",
+            "Sadi Erdo\u011fdu",
+            "Sadi Erdo\u011fdu",
+            "\u015eahin Aslan",
+            "\u015eahin Aslan",
+            "Selvihan K\u0131l\u0131\u00e7",
+            "Selvihan K\u0131l\u0131\u00e7"
+          ],
+          "timeslots": [
+            "8:10-8:50",
+            "8:50-9:00",
+            "9:00-9:40",
+            "9:40-9:50",
+            "9:50-10:30",
+            "10:30-10:40",
+            "10:40-11:20",
+            "11:20-11:30",
+            "11:30-12:10",
+            "12:10-13:10",
+            "13:10-13:50",
+            "13:50-14:00",
+            "14:00-14:40",
+            "14:40-14:50",
+            "14:50-15:30"
+          ]
+        },
+        {
+          "class": "10-C",
+          "lessons": [
+            "MAT",
+            "MAT",
+            "MAT",
+            "MAM",
+            "MAM",
+            "MAM",
+            "BED",
+            "BED"
+          ],
+          "teachers": [
+            "Kenan Kan\u0131\u015fmak",
+            "Kenan Kan\u0131\u015fmak",
+            "Kenan Kan\u0131\u015fmak",
+            "M. O\u011fuz Akpolat",
+            "M. O\u011fuz Akpolat",
+            "M. O\u011fuz Akpolat",
+            "Serpil Candemir",
+            "Serpil Candemir"
+          ],
+          "timeslots": [
+            "8:20-9:00",
+            "9:00-9:10",
+            "9:10-9:50",
+            "9:50-10:00",
+            "10:00-10:40",
+            "10:40-10:50",
+            "10:50-11:30",
+            "11:30-11:40",
+            "11:40-12:20",
+            "12:20-13:20",
+            "13:20-14:00",
+            "14:00-14:10",
+            "14:10-14:50",
+            "14:50-15:00",
+            "15:00-15:40"
+          ]
+        },
+        {
+          "class": "10-D",
+          "lessons": [
+            "MAT",
+            "MAT",
+            "BIY",
+            "BIY",
+            "COG",
+            "COG",
+            "DIN",
+            "DIN"
+          ],
+          "teachers": [
+            "F. Mehmet \u00d6zhan",
+            "F. Mehmet \u00d6zhan",
+            "Atalay Akyol",
+            "Atalay Akyol",
+            "Selvihan K\u0131l\u0131\u00e7",
+            "Selvihan K\u0131l\u0131\u00e7",
+            "H\u00fcsne G\u00fcndo\u011fdu",
+            "H\u00fcsne G\u00fcndo\u011fdu"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "11-A",
+          "lessons": [
+            "ASY",
+            "ASY",
+            "ASY",
+            "ASY",
+            "ASY",
+            "TDE",
+            "TDE",
+            "TDE"
+          ],
+          "teachers": [
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "Mahmut Atik",
+            "A. Zeki \u00d6\u011f\u00fct",
+            "A. Zeki \u00d6\u011f\u00fct",
+            "A. Zeki \u00d6\u011f\u00fct"
+          ],
+          "timeslots": [
+            "8:00-8:40",
+            "8:40-8:50",
+            "8:50-9:30",
+            "9:30-9:40",
+            "9:40-10:20",
+            "10:20-10:30",
+            "10:30-11:10",
+            "11:10-11:20",
+            "11:20-12:00",
+            "12:00-13:00",
+            "13:00-13:40",
+            "13:40-13:50",
+            "13:50-14:30",
+            "14:30-14:40",
+            "14:40-15:20"
+          ]
+        },
+        {
+          "class": "11-B",
+          "lessons": [
+            "BED",
+            "BED",
+            "YDL",
+            "YDL",
+            "NTP",
+            "NTP",
+            "NTP",
+            "NTP"
+          ],
+          "teachers": [
+            "Faik \u00c7elik",
+            "Faik \u00c7elik",
+            "Banu Ayaz",
+            "Banu Ayaz",
+            "H\u00fcseyin \u00d6ver",
+            "H\u00fcseyin \u00d6ver",
+            "H\u00fcseyin \u00d6ver",
+            "H\u00fcseyin \u00d6ver"
+          ],
+          "timeslots": [
+            "8:10-8:50",
+            "8:50-9:00",
+            "9:00-9:40",
+            "9:40-9:50",
+            "9:50-10:30",
+            "10:30-10:40",
+            "10:40-11:20",
+            "11:20-11:30",
+            "11:30-12:10",
+            "12:10-13:10",
+            "13:10-13:50",
+            "13:50-14:00",
+            "14:00-14:40",
+            "14:40-14:50",
+            "14:50-15:30"
+          ]
+        },
+        {
+          "class": "11-C",
+          "lessons": [
+            "TDE",
+            "TDE",
+            "TDE",
+            "TDE",
+            "MUH",
+            "MUH",
+            "MUH",
+            "MUH"
+          ],
+          "teachers": [
+            "\u0130rfan G\u00fclmez",
+            "\u0130rfan G\u00fclmez",
+            "\u0130rfan G\u00fclmez",
+            "\u0130rfan G\u00fclmez",
+            "Necmettin A\u00e7\u0131kkap\u0131",
+            "Necmettin A\u00e7\u0131kkap\u0131",
+            "Necmettin A\u00e7\u0131kkap\u0131",
+            "Necmettin A\u00e7\u0131kkap\u0131"
+          ],
+          "timeslots": [
+            "8:20-9:00",
+            "9:00-9:10",
+            "9:10-9:50",
+            "9:50-10:00",
+            "10:00-10:40",
+            "10:40-10:50",
+            "10:50-11:30",
+            "11:30-11:40",
+            "11:40-12:20",
+            "12:20-13:20",
+            "13:20-14:00",
+            "14:00-14:10",
+            "14:10-14:50",
+            "14:50-15:00",
+            "15:00-15:40"
+          ]
+        }
+      ]
+    }
+  ]
+}
