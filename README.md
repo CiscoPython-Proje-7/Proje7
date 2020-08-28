@@ -4,16 +4,29 @@
 ### Kısa Özet
 Özellikle pandemi sürecinde öğrenci dolaşımını azaltmak için farklı sınıf gruplarına farklı ders ve teneffüs zamanı uygulayabilmek gerekmektedir. Zaman bildirimi için kullanılan mevcut yöntem ders zili uygulamasıdır. Ancak bu bildirim farklı gruplara farklı zamanlarda bildirim vermeye uygun değildir. Bir grup öğrenci derse devam ederken diğer gruba zil ile bildirim göndermek karmaşaya ve ses kirliliğine neden olacaktır. Bu durum da bizi sınıflardaki öğrenciler ve öğretmenin akıllı tahtalarda ders akışını takip edebilecekleri bir araç geliştirme fikrine yönlendirmiştir. Projemizde ve öğrencinin ders gördüğü ortamlardaki akıllı tahtaların alt kısmında 50 piksel yüksekliğinde yarı şeffaf bir bar, zaman bildirimi için kullanılacaktır. Bu bar farklı zaman dilimi uygulaması kullanılmadığı durulamrda dahi zaman bildirimi için yeni bir alternatif oluşturacak ve okulda zil kullanımına olan gereksinimi de tamamen ortadan kaldıracaktır. Proje aynı zamanda okul yöneticilerinin sınıf ders programlarını veritabanına kolay bir şekilde girebilmeleri için bir Django web uygulaması da içermektedir. Akıllı tahtalar seçilen sınıfa göre günlük ders programını gün boyunca; şu an hangi derste veya teneffüste oldukları, ders veya teneffüs bitimine ne kadar zaman kaldığı gibi bilgileri sınıftaki bireylerin başka bir bildirime (zil vb.) gerek duymadan takip edebilmelerini sağlayacaktır.
 ### Problem Tanımı
-Yazılımın yapılma sebebinin bir soru cümlesi ile ifade edilmesi istenmektedir. Bu soru cümlesi devamında yazılım üretilmesine sebep olan ihtiyaçlar çerçevesinde açıklama yapılır. Farklı literatürlerde amaç olarak ifade edilmesi gerektiği ifade edilmektedir. 
+Pandemi sürecinde öğrenci dolaşımını azaltmak için farklı sınıf gruplarına farklı ders ve teneffüs zamanı uygulayabilmek gerekmektedir. Zaman bildirimi için kullanılan mevcut yöntem ders zili uygulamasıdır. Ancak bu bildirim farklı gruplara farklı zamanlarda bildirim vermeye uygun değildir. Bir grup öğrenci derse devam ederken diğer gruba zil ile bildirim göndermek karmaşaya ve ses kirliliğine neden olacaktır. Bu durum da bizi sınıflardaki öğrenciler ve öğretmenin akıllı tahtalarda ders akışını takip edebilecekleri bir araç geliştirilebilir mi? sorusunu sormaya sebep olmuş ve bu sorun üzerinde problemin çözüm yolunun bulunması fikrini doğrmuştur.
 ### Analiz Süreci
-Yazılımın üretilmesinde kullanılacak teknolojilere, yazılımlara ve 3rd Part  yönelik olarak alınan kararlar,alternatifleri ve gerekçeleri üzerine bilgiler içeren bölümdür. 
+Problemin çözümü için proje ekibimizle yaptığımız uzaktan toplantılarda problemin detaylı analizi gerçekleştirldi. Bu toplantılarda Her sınıfa akıllı tahta bulunması, bu tahtalardan genelde öğretmenler odalarında da bulunması bu projenin kullanılabilirliğinin olduğu görüşü ağırlık kazanmıştır. Bu analizler sonucunda doğal olarak  programlama dili olarak Python kullanılmasına. Programın görsel tasarımında Tkinter modülünün kulllanılmasına,  pygame modülünün kullanılmasına ve günlük ders programının tutulması içinse JSon modülünün kullanılmasının uyğun olacağı kararına varıldı.
 #### 1. İhtiyaç Analizi
-Projeye duyulan ihtiyaç ifade edilir. Bu yazılımın kullanım sebepleri yine bu bölümde ifade edilebilecektir. 
+Tüm dünyada olduğu gibi Ülkemizde'de pandemiden dolayı eğitime ara verildi. Bu süreçte eğitim Eba gibi online platformlar üzerinden gerçekleşti. Her ne kadar dünyadaki diğer ülkelerden uzaktan eğiğtime en hızlı adapte olmuş olsak da hiç bir eğitim yüz yüze ğitim kadar etkili olmamaıştır, olmayacaktır da. Yeni eğitim öğretim yılında Bakanlığımızın birinci önceliği sağlıklı ortamlarda öğrencilerin eğitimine okullarında, sınıflarında devam edebilmeleridir. Ancak bunun da çok fazla riski mevcuttur. Aynı anda derse girmek, aynı anda teneffüs yapmak öğrencilerin bir birleriyle daha çok etkileşimli olmaları anlamına gelmektedir. Hem eğitimin okullarda yapılması, hem de virüs bulaşısını en aza indirebilmek bu sürecin sağlıklı atlatılması nasıl sağlanabilir. Bu sorunun üstesinden gelebilmek için bir programa ihtiyaç duyulmuştur.
+
+ 
 #### 2. İçerik Analizi 
-Projenin içeriğine dair alınan kararlar ifade edilir. Yazılımda gerçekleştirilebilecek işlemler ve yazılımın kazanması gereken yetenekler üzerine bilgiler içermektedir.
+ Bu proje kapsamında; Eğitim okulda yüz yüze yapılmalı, Öğrenciler derslere şube düzeyinde kademeli olarak  girmeli teneffüslere de kademeli olarak çıkmalı. öğrencilerin teneffüslerde minimum karşılaşmalı, derse giriş ve çıkışlarında karışıklığa sebebiyet vermemek için zil sistemi kullanılmamalı. Sistem Akıllı tahtaları kurulmalı ve ders , teneffüs süreleri akıllı tahtalar üzerinde takip edilmeli.
+
 #### 3. Durum Ortam Analizi
+Yazılımı gerçekleştirirken;
+ Settings,
+ requests,
+ json,
+ pygame,
+ tkinter,
+ win32api,
+ datetime isimli python kütüphanelerinden faydalanılmıştır.
 Yazılımın gerçekleştirilmesi sürecinde kullanılan veriler ve kütüphaneler vb. bilgiler yer almaktadır. 
 #### 4. Kullanıcı Analizi 
+Bu yazılım Ülkemizde ve tüm dünyadaki resmi ya da özel okullarda görev yapan idarecilerin rahatlıkla kullanabilmeleri için yazılmıştır.
+
 Yazılımı kullanacak olan ya da bu yazılımın paylaşılması durumunda kaynak kod üzerinden faydalanmak isteyecek kullanıcının profiline yönelik bilgiler yer almaktadır.
 
 ## Lesson Time Tracker Tasarım Raporu
