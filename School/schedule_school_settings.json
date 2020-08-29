@@ -13,11 +13,14 @@
     "half_hour_indicator_text_font_color": "#303030",
     "curent_time_font_style": "calibri 24 bold", 
     "curent_time_font_color": "white",
+    "lesson_color": "#603030",
+    "break_color": "#306030",
+    "current_lesson_color": "#c03030",
+    "current_break_color": "#30a030",
     "finished_lesson_color": "#4a4a4a", 
     "finished_break_color": "#505050", 
-    "lesson_color": "#fd5e53",
-    "break_color": "#8cba51",
-    "title_height": 80,
-    "time_offset": -10,
-    "day_offset": 1
+    "title_height": 60,
+    "top_bottom_margin": 20,
+    "time_offset": -13,
+    "day_offset": 0
 }

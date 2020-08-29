@@ -52,12 +52,18 @@ def time():
             #     canvas.itemconfigure(day_name, text=test)
 
             # Loop for each lesson and break rectangles
-
             x = 0
             for r in range(last_checked_rectangle_index + 1, (i + 1) * (lessons_count * 2 - 1)):
    
                 rx0, ry0, rx1, ry1 = canvas.coords(rectangles[r])
                 global last_completed_rectangle_x1, first_run
+
+                # Change the current lesson/break color
+                if x0 > rx0 and x0 < rx1:
+                    if canvas.itemcget(rectangles[r], 'fill') == settings['lesson_color'] and canvas.itemcget(rectangles[r], 'fill') != settings['current_lesson_color']:
+                        canvas.itemconfigure(rectangles[r], fill=settings['current_lesson_color'])
+                    elif canvas.itemcget(rectangles[r], 'fill') == settings['break_color'] and canvas.itemcget(rectangles[r], 'fill') != settings['current_break_color']:
+                        canvas.itemconfigure(rectangles[r], fill=settings['current_break_color'])
 
                 # Change the last finished lesson/break color
                 if x0 > rx1 and rx1 > last_completed_rectangle_x1[i] and (current_time.split(':')[2] == '00' or first_run):
@@ -117,10 +123,12 @@ def set_hour_indicators(day):
             hour_indicator_text = '{:02}:{:02}'.format(min_time.hour, min_time.minute)
             hour_indicator_x = get_x_from_time(hour_indicator_text)
             if min_time.minute == 0:
-                canvas.create_rectangle(hour_indicator_x, title_height, hour_indicator_x + 2, window_height - 22, fill=settings['hour_indicator_text_font_color'])
+                canvas.create_rectangle(hour_indicator_x, title_height + top_bottom_margin, hour_indicator_x + 2, window_height - top_bottom_margin, fill=settings['hour_indicator_text_font_color'])
+                canvas.create_text(hour_indicator_x, title_height + 10, fill=settings['hour_indicator_text_font_color'], font=settings['hour_indicator_text_font_style'], text=hour_indicator_text)
                 canvas.create_text(hour_indicator_x, window_height - 10, fill=settings['hour_indicator_text_font_color'], font=settings['hour_indicator_text_font_style'], text=hour_indicator_text)
             else:
-                canvas.create_rectangle(hour_indicator_x, title_height, hour_indicator_x + 2, window_height - 22, fill=settings['half_hour_indicator_text_font_color'])
+                canvas.create_rectangle(hour_indicator_x, title_height + top_bottom_margin, hour_indicator_x + 2, window_height - top_bottom_margin, fill=settings['half_hour_indicator_text_font_color'])
+                canvas.create_text(hour_indicator_x, title_height + 10, fill=settings['half_hour_indicator_text_font_color'], font=settings['half_hour_indicator_text_font_style'], text=hour_indicator_text)
                 canvas.create_text(hour_indicator_x, window_height - 10, fill=settings['half_hour_indicator_text_font_color'], font=settings['half_hour_indicator_text_font_style'], text=hour_indicator_text)
         min_time += timedelta(minutes=1)
     
@@ -198,12 +206,13 @@ timeline_left_x = 100
 timeline_right_x = screen_width - 4
 timeline_size = timeline_right_x - timeline_left_x
 title_height = settings['title_height']
+top_bottom_margin = settings['top_bottom_margin']
 rectangle_height = 38
 rectangle_y_center = rectangle_height / 2
 bar_spacing = 7
 class_bar_height = rectangle_height + bar_spacing
 
-top_margin = 24
+
 
 # Create text for displaying remaining time on the left and current time on the right of timeline
 rectangles = []
@@ -229,10 +238,11 @@ set_hour_indicators(day)
 
 n = 0
 class_count = len(data['days'][day]['classes'])
-y = (window_height - title_height) / (class_count + 1) - rectangle_height / 2
+y = (window_height - title_height - rectangle_height - 2 * top_bottom_margin - 10) / (class_count - 1)
+
 for current_class in data['days'][day]['classes']:
 
-    current_row_y = title_height + (n + 1) * y
+    current_row_y = title_height + top_bottom_margin + n * y + 5
 
     current_class_name = current_class['class']
     class_name = canvas.create_text(timeline_left_x / 2, current_row_y + rectangle_height / 2, fill=settings['class_name_font_color'], font=settings['class_name_font_style'], text=current_class_name)
