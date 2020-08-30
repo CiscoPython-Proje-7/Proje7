@@ -7,13 +7,15 @@
     "remaining_time_font_color": "white", 
     "day_name_font_style": "calibri 18 bold", 
     "day_name_font_color": "#e84a5f",
-    "curent_time_font_style": "calibri 18 bold", 
-    "curent_time_font_color": "white",
-    "finished_lesson_color": "#4a4a4a", 
-    "finished_break_color": "#505050", 
-    "lesson_color": "#fd5e53",
-    "break_color": "#8cba51",
+    "current_time_font_style": "calibri 18 bold", 
+    "current_time_font_color": "white",
+    "lesson_color": "#603030",
+    "break_color": "#304030",
+    "current_lesson_color": "#f06060",
+    "current_break_color": "#60a060",
+    "finished_lesson_color": "#505050", 
+    "finished_break_color": "#404040",
     "selected_class": "9-A",
-    "time_offset": 0,
-    "day_offset": 0
+    "time_offset": -1,
+    "day_offset": -2
 }

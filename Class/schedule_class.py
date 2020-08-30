@@ -37,16 +37,27 @@ def time():
             rx0, ry0, rx1, ry1 = canvas.coords(rectangle)
             global last_completed_rectangle_x1
 
+            # Change the current lesson/break color
+            if x1 > rx0 and x1 < rx1 and (current_time.split(':')[2] == '00' or first_run):
+                # test = canvas.itemcget(day_name, 'text')
+                # test = '{},{},{}'.format(int(x1), int(rx0), int(rx1))
+                # canvas.itemconfigure(day_name, text=test)
+
+                if canvas.itemcget(rectangle, 'fill') == settings['lesson_color'] and canvas.itemcget(rectangle, 'fill') != settings['current_lesson_color']:
+                    canvas.itemconfigure(rectangle, fill=settings['current_lesson_color'])
+                elif canvas.itemcget(rectangle, 'fill') == settings['break_color'] and canvas.itemcget(rectangle, 'fill') != settings['current_break_color']:
+                    canvas.itemconfigure(rectangle, fill=settings['current_break_color'])
+
             # Change the last finished lesson/break color
             if x1 > rx1 and rx1 > last_completed_rectangle_x1 and (current_time.split(':')[2] == '00' or first_run):
                 if canvas.itemcget(rectangle, 'fill') == settings['lesson_color']:
                     canvas.itemconfigure(rectangle, fill=settings['finished_lesson_color'])
                     if not first_run:
-                        play(True)
+                        play()
                 else:
                     canvas.itemconfigure(rectangle, fill=settings['finished_break_color'])
                     if not first_run:
-                        play(False)
+                        play()
                 global completed_lesson_break_count
                 completed_lesson_break_count += 1
                 last_completed_rectangle_x1 = rx1
@@ -100,11 +111,9 @@ def close_program():
 def disable_event():
     pass
 
-def play(isLesson):
-    if isLesson:
-        pygame.mixer.music.load("sounds/notification_1.mp3")
-    else:
-        pygame.mixer.music.load("sounds/notification_2.mp3")
+def play():
+
+    pygame.mixer.music.load("../sounds/notification_1.mp3")
     pygame.mixer.music.play(loops=0)
 
 form = Tk()
@@ -168,7 +177,7 @@ selected_class_data = get_selected_class_data(selected_class)
 class_name = canvas.create_text(timeline_left_x / 2, top_margin - 10, fill=settings['class_name_font_color'], font=settings['class_name_font_style'], text=selected_class)
 text_remaining_time = canvas.create_text(timeline_left_x / 2, top_margin + 10, fill=settings['remaining_time_font_color'], font=settings['remaining_time_font_style'])
 day_name = canvas.create_text(window_width - 60, top_margin - 10, fill=settings['day_name_font_color'], font=settings['day_name_font_style'], text=data['days'][day]['day'])
-text_current_time = canvas.create_text(window_width - 60, top_margin + 10, fill=settings['curent_time_font_color'], font=settings['curent_time_font_style'])
+text_current_time = canvas.create_text(window_width - 60, top_margin + 10, fill=settings['current_time_font_color'], font=settings['current_time_font_style'])
 
 # Get lesson/break starting and ending times for selected class
 todays_timeslots = selected_class_data['timeslots']

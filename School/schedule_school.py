@@ -1,6 +1,7 @@
 import ScheduleSchoolSettings
 import requests
 import json
+import pygame
 from tkinter import * 
 from tkinter.ttk import *
 from win32api import GetMonitorInfo, MonitorFromPoint
@@ -59,7 +60,7 @@ def time():
                 global last_completed_rectangle_x1, first_run
 
                 # Change the current lesson/break color
-                if x0 > rx0 and x0 < rx1:
+                if x0 > rx0 and x0 < rx1 and (current_time.split(':')[2] == '00' or first_run):
                     if canvas.itemcget(rectangles[r], 'fill') == settings['lesson_color'] and canvas.itemcget(rectangles[r], 'fill') != settings['current_lesson_color']:
                         canvas.itemconfigure(rectangles[r], fill=settings['current_lesson_color'])
                     elif canvas.itemcget(rectangles[r], 'fill') == settings['break_color'] and canvas.itemcget(rectangles[r], 'fill') != settings['current_break_color']:
@@ -70,9 +71,12 @@ def time():
 
                     if canvas.itemcget(rectangles[r], 'fill') == settings['lesson_color']:
                         canvas.itemconfigure(rectangles[r], fill=settings['finished_lesson_color'])
+                        if not first_run:
+                            play()
                     else:
                         canvas.itemconfigure(rectangles[r], fill=settings['finished_break_color'])
-                        
+                        if not first_run:
+                            play()
                     global completed_lesson_break_count
                     completed_lesson_break_count[i] += 1
                     last_completed_rectangle_x1[i] = rx1
@@ -155,6 +159,11 @@ def close_program():
 def disable_event():
     pass
 
+def play():
+
+    pygame.mixer.music.load("../sounds/notification_1.mp3")
+    pygame.mixer.music.play(loops=0)
+
 form = Tk()
 
 # Get application settings
@@ -196,6 +205,8 @@ form.geometry("{}x{}+{}+{}".format(window_width, window_height, x_coordinate, y_
 form.resizable(False, False)
 form.overrideredirect(True)
 
+pygame.mixer.init()
+
 canvas = Canvas(form, width=window_width - 4, height=window_height - 2, background=settings['form_background'], highlightthickness=0)
 canvas.pack()
 
@@ -224,7 +235,7 @@ month = datetime.today().month
 year = datetime.today().year
 title = '{:02}.{:02}.{} {}'.format(daynumber, month, year, day_name_text)
 day_name = canvas.create_text(window_width / 2, title_height / 2 - 16, fill=settings['title_font_color'], font=settings['title_font_style'], text=title)
-text_current_time = canvas.create_text(window_width / 2, title_height / 2 + 16, fill=settings['curent_time_font_color'], font=settings['curent_time_font_style'])
+text_current_time = canvas.create_text(window_width / 2, title_height / 2 + 16, fill=settings['current_time_font_color'], font=settings['current_time_font_style'])
 
 # Get current date in YY-MM-DD format
 current_date = str(datetime.today().year) + '-' + str(datetime.today().month) + '-' + str(datetime.today().day) + ' '
